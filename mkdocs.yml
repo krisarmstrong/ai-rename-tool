@@ -1,0 +1,30 @@
+site_name: AI Rename Tool
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+    - search.highlight
+nav:
+  - Overview: index.md
+  - Getting Started: getting-started.md
+  - Usage Guide: usage.md
+  - API Reference:
+      - Core: api-core.md
+      - Naming: api-naming.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            docstring_style: google
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
