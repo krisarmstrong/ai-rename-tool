@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 import re
 from pathlib import Path
 
@@ -11,7 +12,7 @@ def is_good_name(name: str) -> bool:
         return False
     if name.strip() != name:
         return False
-    if any(ch in name for ch in ("/", "\")):
+    if any(ch in name for ch in ("/", '"')):
         return False
     if re.fullmatch(r"[._-]+", name):
         return False

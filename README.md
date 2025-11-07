@@ -2,6 +2,7 @@
 
 Fast, safe file renamer powered by deterministic suggestions, with a clean plan → apply → undo workflow.
 Designed for **functions-first** architecture, **PEP 8/257** compliance, and **Git tag** versioning.
+Requires **Python 3.14+**.
 
 ## Features
 - **Dry-run plan** (JSON/CSV) with conflict resolution (`_1`, `_2`, …)
@@ -10,11 +11,11 @@ Designed for **functions-first** architecture, **PEP 8/257** compliance, and **G
 - **Docs** (MkDocs Material), **CI** (GitHub Actions), **Security** (Bandit, CodeQL), **SBOM** (CycloneDX)
 
 ## Install
+Use the helper script to create a local virtual environment with Python 3.14:
+
 ```bash
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -U pip
-pip install -e .
-pre-commit install
+bash scripts/bootstrap-venv.sh
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 ```
 
 ## Usage

@@ -6,17 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "ai-rename-tool"
 description = "Fast, safe file renamer with AI-ready interface, deterministic plans, and undo."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "Kris", email = "example@example.com"}]
 keywords = ["rename", "files", "cli"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Environment :: Console",
     "Topic :: Utilities",
@@ -40,11 +36,11 @@ fallback_version = "0.0.0"
 
 [tool.black]
 line-length = 100
-target-version = ["py39", "py310", "py311", "py312"]
+target-version = ["py311", "py312"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py311"
 
 [tool.ruff.lint]
 extend-select = ["E", "F", "I", "UP", "B", "SIM", "C4", "S"]
