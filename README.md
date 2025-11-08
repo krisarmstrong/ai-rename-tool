@@ -1,5 +1,8 @@
 # AI Rename Tool
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white) ![License](https://img.shields.io/badge/License-MIT-green) ![Tests](https://img.shields.io/badge/Tests-pytest-passing) ![pip](https://img.shields.io/badge/pip-package-3776AB?logo=pypi&logoColor=white) ![Status](https://img.shields.io/badge/Status-Active-success)
+
+
 Fast, safe file renamer powered by deterministic suggestions, with a clean plan → apply → undo workflow.
 Designed for **functions-first** architecture, **PEP 8/257** compliance, and **Git tag** versioning.
 Requires **Python 3.14+**.
